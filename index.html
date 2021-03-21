@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>video</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+        
+        .container{
+            width: 100%; 
+            height: 100vh; 
+            overflow: hidden; 
+            position: relative; 
+        }
+        .container video{
+            position: absolute;
+            left: 0;
+            top: 0; 
+            width: 100%;
+            height: 100%; 
+            object-fit: cover; 
+            z-index: -1; 
+        }
+        .content{
+            position: absolute;
+            top: 50%;
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            background-color: rgba(255, 255, 255, .4); 
+            padding: 40px; 
+        }
+        .content h1{
+            font-family: cursive;
+            font-size: 40px;
+            text-align: center; 
+            color: brown;
+            text-transform: uppercase; 
+        }
+          .content p{
+            font-family: cursive;
+            font-size: 1rem;
+            text-align: center;
+            line-height: 1.5; 
+            padding-top: 30px;  
+        }
+        
+/*        */
+        
+        .promo{
+            width: 100%;
+            height: 500px;
+            margin: 100px 0px; 
+            background-color: aqua; 
+        } 
+        
+        .yt_video{
+            width: 960px;
+            height: 500px;
+            background-color: brown; 
+            margin: auto auto; 
+        }
+        .map_area{
+            width: 100%;
+            height: 500px;
+            margin: 0px 0px 100px; 
+         
+}
+        .map{
+            width: 960px;
+            height: 500px;
+            margin: 0 auto;
+        }
+        
+        .text{
+            width: 960px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        .text h2{
+            border-bottom: 1px dotted #000; 
+            display: inline; 
+            position: relative; 
+            padding-bottom: 10px; 
+        }
+        
+        .text h2::after{
+            content:"";
+            position: absolute; 
+            top: 34px;
+            left: 0px;
+            width: 5px;
+            height:5px;
+            border-radius: 50%; 
+            background-color: #3BBDFB;
+        }   
+        .text h2::before{
+            content:"";
+            position: absolute; 
+            top: 34px;
+            right: 0px;
+            width: 5px;
+            height:5px;
+            border-radius: 50%; 
+            background-color: #3BBDFB;
+        }
+        .text1{
+            width: 960px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        .text1 h2{
+            position: relative; 
+            padding: 10px 0px; 
+        }
+        .text1 h2:before{
+            content:"";
+            position: absolute; 
+            bottom: 0px;
+            left:10px;
+            width: 30px;
+            height: 2px;
+            background-color: red; 
+        }   
+        .text1 h2:after{
+            content:"";
+            position: absolute; 
+            top: 0px;
+            left:10px;
+            width: 30px;
+            height: 2px;
+            background-color: red; 
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+       <div class="content">
+           <h1>Welcome to our website</h1>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur perferendis, deleniti quam fuga quidem, earum asperiores ducimus facere cum inventore harum nihil perspiciatis hic ipsa saepe laudantium, impedit laboriosam ullam voluptate tempora. Repellat ducimus voluptatibus, accusamus aspernatur repudiandae, inventore architecto ullam rerum dolores. Iusto, provident nostrum architecto vitae voluptate id ipsum vel dolorum tenetur voluptatibus eaque suscipit ipsa exercitationem, fuga quia consequuntur. Illo, consectetur omnis atque debitis animi ad delectus odit, architecto minus excepturi mollitia dolore. Modi cupiditate amet quae!</p>
+       </div>
+       
+        <video autoplay loop muted>
+            <source src="bg1.mp4">
+        </video>
+    </header>
+    
+    <section class="promo">
+        <div class="yt_video">
+      <iframe width="960" height="500" src="https://www.youtube.com/embed/ONraFRVwY6o?start=5423" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <section class="map_area">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14580.11966025261!2d90.03336668456974!3d23.994720700291523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755f9acbd1a5db1%3A0x20fd4c7de826a6cb!2sBaliati!5e0!3m2!1sen!2sbd!4v1616343243403!5m2!1sen!2sbd" width="960" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    
+    <section class="text">
+        <h2>Balaiti</h2>
+    </section> 
+       
+       <section class="text1">
+        <h2>Place</h2>
+    </section>
+    
+</body>
+</html>
